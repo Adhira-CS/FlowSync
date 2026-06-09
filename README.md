@@ -1,84 +1,69 @@
-FlowSync
+# FlowSync
+
 FlowSync is an AI-powered workflow automation platform that transforms meeting notes into actionable project workflows.
+
 Using Gemini, FlowSync automatically extracts tasks, blockers, risks, milestones, priorities, and recommended next actions from unstructured meeting discussions. The platform also integrates with GitLab to create work items and help teams move directly from discussion to execution.
-Features
 
-AI-powered meeting note analysis
-Automatic task extraction
-Blocker and risk detection
-Milestone identification
-Recommended next actions
-Meeting history tracking
-Task Cards view
-Priority Matrix view
-GitLab work item creation
-Cloud-hosted deployment on Google Cloud Run
+## Features
 
-Built With
+* AI-powered meeting note analysis
+* Automatic task extraction
+* Blocker and risk detection
+* Milestone identification
+* Recommended next actions
+* Meeting history tracking
+* Task Cards view
+* Priority Matrix view
+* GitLab work item creation
+* Deployment on Google Cloud Run
 
-TypeScript
-Next.js
-React
-Tailwind CSS
-Node.js
-Gemini
-Google Cloud Run
-Google Cloud Agent Platform
-GitLab API
-GitLab MCP
-Cursor
+## Built With
 
-How It Works
+* TypeScript
+* Next.js
+* React
+* Tailwind CSS
+* Node.js
+* Gemini
+* Google Cloud Run
+* Google Cloud Agent Platform
+* GitLab API
+* GitLab MCP
+* Cursor
 
+## How It Works
 
-Upload or paste meeting notes.
+1. Paste or upload meeting notes.
+2. Gemini analyzes the content.
+3. FlowSync extracts tasks, blockers, risks, milestones, and priorities.
+4. Results are displayed through task cards and a priority matrix.
+5. Extracted actions can be converted into GitLab work items.
 
+## Live Demo
 
-Gemini analyzes the content.
+Hosted Application:
 
+https://flowsync-6996749565.me-central1.run.app
 
-FlowSync extracts:
+## Running Locally
 
-Tasks
-Blockers
-Risks
-Milestones
-Priorities
-
-
-
-Results are displayed through task cards and a priority matrix.
-
-
-Extracted actions can be converted into GitLab work items.
-
-
-Deployment
-FlowSync is deployed on Google Cloud Run and is accessible through a live hosted URL.
-Running Locally
-Install dependencies:
+```bash
 npm install
-Start the development server:
 npm run dev
+```
+
 Open:
+
+```txt
 http://localhost:3000
-Google Cloud Integration
-FlowSync uses:
+```
 
-Google Cloud Run for hosting and deployment
-Gemini for intelligent meeting analysis
-Google Cloud Agent Platform for agent configuration
-GitLab MCP configuration for partner-track integration
+## Google Cloud Integration
 
-GitLab Integration
-FlowSync automatically converts extracted project actions into GitLab work items, helping teams move from planning to execution with minimal manual effort.
-Future Improvements
+FlowSync uses Google Cloud Run for deployment and Gemini for intelligent meeting-note analysis.
 
-Conversational project assistant
-Advanced project analytics
-Enhanced GitLab workflow automation
-Cross-project insights
-Expanded document support
+A FlowSync Agent was also configured in Google Cloud Agent Platform with GitLab MCP integration as part of the GitLab partner-track implementation.
 
-License
+## License
+
 MIT License
